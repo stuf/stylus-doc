@@ -12,9 +12,9 @@ data Tag
   | ParamTag
   deriving (Show, Eq)
 
-data Content
-  = Describe T.Text
-  | Define T.Text
+data Content a
+  = Describe a
+  | Define a
   deriving (Show)
 
 --
